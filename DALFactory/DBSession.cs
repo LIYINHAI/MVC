@@ -28,8 +28,13 @@ namespace DALFactory
             }
             set { _IUserInfoDal = value; }
         }
+        /// <summary>
+        /// 我的错误代码
+        /// </summary>
+        /// <returns></returns>
         public bool SaveChanges()
         {
+            
             return Db.SaveChanges() > 0;
         }
     }
